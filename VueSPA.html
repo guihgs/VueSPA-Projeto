@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue SPA</title>
+</head>
+<body>
+	<style type="text/css">
+	.main-app .pagetitle {   
+   		padding: 20px 0;
+    	border-bottom: 1px solid #ddd;
+	}
+	.main-app .pagetitle h1{
+    	margin: 0;
+	}
+	.main-app nav .nav-wrapper .brand-logo {
+    	margin-left: 10px;
+  	}
+  	.main-app .page-template-contact,
+  	.page-template-not-found {
+        min-height: 500px;
+  	}
+  	.main-app .page-template-home  .hero .hero-content{
+      	padding: 120px 0;
+    }
+    .main-app .page-template-home  .hero .hero-contenth1 {
+        margin: 0;
+    }
+	</style>
+<div id="app" class="main-app">
+  <!--   main menu   -->
+  <app-menu></app-menu>
+  <div class="main-content">
+    <!--   main content for every pages   -->
+    <router-view></router-view>
+  </div>
+  <!--   main footer   -->
+  <app-footer></app-footer>
+</div>
+
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- development version, includes helpful console warnings -->
+<script src="https://unpkg.com/vue-router@3.1.5/dist/vue-router.js"></script>
+<script src="vueapp.js"></script>
+</body>
+</html>
